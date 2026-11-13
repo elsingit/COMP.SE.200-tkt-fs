@@ -1,4 +1,7 @@
+[![Coverage Status](https://coveralls.io/repos/github/elsingit/COMP.SE.200-tkt-fs/badge.svg?branch=main)](https://coveralls.io/github/elsingit/COMP.SE.200-tkt-fs?branch=main)
+
 # Student template
+
 
 ## Purpose of this repository
 
