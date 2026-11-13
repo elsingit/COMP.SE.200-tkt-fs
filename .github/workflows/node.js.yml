@@ -29,9 +29,8 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm run coverage
-
     - uses: coverallsapp/github-action@v2
-    if: always()
-    with:
-      github-token: ${{ secrets.GITHUB_TOKEN }}
-      file: coverage/lcov.info
+      if: always()
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        file: coverage/lcov.info
