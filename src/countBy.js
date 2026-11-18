@@ -31,8 +31,9 @@ function countBy(collection, iteratee) {
     key = iteratee(value)
     if (hasOwnProperty.call(result, key)) {
       ++result[key]
+    //fix by Essi, new groups start with 1 instead of 0
     } else {
-      baseAssignValue(result, key, 0)
+      baseAssignValue(result, key, 1)
     }
     return result
   }, {})
