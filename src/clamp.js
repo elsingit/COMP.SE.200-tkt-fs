@@ -21,9 +21,11 @@ function clamp(number, lower, upper) {
   upper = +upper
   lower = lower === lower ? lower : 0
   upper = upper === upper ? upper : 0
+  // this was fixed by Essi because the original version had the 
+  //comparison operators reversed, causing function to return wrong values
   if (number === number) {
-    number = number >= upper ? number : upper
-    number = number <= lower ? number : lower
+    number = number <= upper ? number : upper
+    number = number >= lower ? number : lower
   }
   return number
 }
