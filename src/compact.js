@@ -12,7 +12,8 @@
  * // => [1, 2, 3]
  */
 function compact(array) {
-  let resIndex = -1
+  //fix by Essi: start index with 0 instead of -1, to not skip first truthy element
+  let resIndex = 0
   const result = []
 
   for (const value of array) {
